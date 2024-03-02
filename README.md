@@ -1,16 +1,49 @@
-# youtube
+flutter_youtube_clone_app
+flutter_youtube_clone_app project has "main.dart" as Entry Point.
 
-A new Flutter project.
 
-## Getting Started
+flutter_youtube_clone_app
 
-This project is a starting point for a Flutter application.
+= = = To Generate Android release steps = = =
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Generate FAT APK
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+flutter clean
+flutter build apk --release
+Generate split APK's
+
+flutter clean
+flutter build apk --split-per-abi --release
+
+
+= = = iOS release steps = = =
+
+Set iOS deployment target
+
+Follow below steps
+
+setup flutter sdk
+get packages
+open runner.xcworkspace from ids folder
+update version code in yaml
+
+
+Bellow commands will generate the runner.app file
+
+flutter clean
+flutter build ios --release
+
+
+Now open the xcode run/build to check if project has error
+
+
+
+Select Product -> Archive Follow the uploading steps
+
+
+
+
+
+
+
